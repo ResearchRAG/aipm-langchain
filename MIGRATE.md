@@ -1,70 +1,70 @@
-# Migrating
+# 迁移指南
 
-## 🚨Breaking Changes for select chains (SQLDatabase) on 7/28/23
+## 🚨 2023年7月28日对选定链（SQLDatabase）的重大变更警告
 
-In an effort to make `langchain` leaner and safer, we are moving select chains to `langchain_experimental`.
-This migration has already started, but we are remaining backwards compatible until 7/28.
-On that date, we will remove functionality from `langchain`.
-Read more about the motivation and the progress [here](https://github.com/langchain-ai/langchain/discussions/8043).
+为了使 `langchain` 更加精简和安全，我们正将选定的链迁移到 `langchain_experimental`。
+此迁移已经开始，但我们保持向后兼容直到7月28日。
+在该日期，我们将从 `langchain` 中移除功能。
+了解更多关于迁移动机和进度的信息，请访问[这里](https://github.com/langchain-ai/langchain/discussions/8043)。
 
-### Migrating to `langchain_experimental`
+### 迁移到 `langchain_experimental`
 
-We are moving any experimental components of LangChain, or components with vulnerability issues, into `langchain_experimental`.
-This guide covers how to migrate.
+我们将 LangChain 的任何实验性组件或存在漏洞问题的组件迁移到 `langchain_experimental`。
+本指南涵盖了如何进行迁移。
 
-### Installation
+### 安装
 
-Previously:
+之前：
 
 `pip install -U langchain`
 
-Now (only if you want to access things in experimental):
+现在（仅当您想要访问实验性内容时）：
 
 `pip install -U langchain langchain_experimental`
 
-### Things in `langchain.experimental`
+### `langchain.experimental` 中的内容
 
-Previously:
+之前：
 
 `from langchain.experimental import ...`
 
-Now:
+现在：
 
 `from langchain_experimental import ...`
 
 ### PALChain
 
-Previously:
+之前：
 
 `from langchain.chains import PALChain`
 
-Now:
+现在：
 
 `from langchain_experimental.pal_chain import PALChain`
 
 ### SQLDatabaseChain
 
-Previously:
+之前：
 
 `from langchain.chains import SQLDatabaseChain`
 
-Now:
+现在：
 
 `from langchain_experimental.sql import SQLDatabaseChain`
 
-Alternatively, if you are just interested in using the query generation part of the SQL chain, you can check out this [`SQL question-answering tutorial`](https://python.langchain.com/v0.2/docs/tutorials/sql_qa/#convert-question-to-sql-query)
+或者，如果您只对使用 SQL 链的查询生成部分感兴趣，可以查看这个[SQL问答教程](https://python.langchain.com/v0.2/docs/tutorials/sql_qa/#convert-question-to-sql-query)
 
 `from langchain.chains import create_sql_query_chain`
 
-### `load_prompt` for Python files
+### Python 文件的 `load_prompt`
 
-Note: this only applies if you want to load Python files as prompts.
-If you want to load json/yaml files, no change is needed.
+注意：这只适用于如果您想要将 Python 文件作为提示加载。
+如果您想要加载 json/yaml 文件，无需变更。
 
-Previously:
+之前：
 
 `from langchain.prompts import load_prompt`
 
-Now:
+现在：
 
 `from langchain_experimental.prompts import load_prompt`

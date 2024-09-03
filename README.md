@@ -1,141 +1,141 @@
-# 🦜️🔗 LangChain
+🦜️🔗 语言链
 
-⚡ Build context-aware reasoning applications ⚡
+⚡ 构建具有上下文感知推理能力的应用 ⚡
 
-[![Release Notes](https://img.shields.io/github/release/langchain-ai/langchain?style=flat-square)](https://github.com/langchain-ai/langchain/releases)
-[![CI](https://github.com/langchain-ai/langchain/actions/workflows/check_diffs.yml/badge.svg)](https://github.com/langchain-ai/langchain/actions/workflows/check_diffs.yml)
-[![PyPI - License](https://img.shields.io/pypi/l/langchain-core?style=flat-square)](https://opensource.org/licenses/MIT)
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/langchain-core?style=flat-square)](https://pypistats.org/packages/langchain-core)
-[![GitHub star chart](https://img.shields.io/github/stars/langchain-ai/langchain?style=flat-square)](https://star-history.com/#langchain-ai/langchain)
-[![Open Issues](https://img.shields.io/github/issues-raw/langchain-ai/langchain?style=flat-square)](https://github.com/langchain-ai/langchain/issues)
-[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode&style=flat-square)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/langchain-ai/langchain)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/langchain-ai/langchain)
-[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/langchainai.svg?style=social&label=Follow%20%40LangChainAI)](https://twitter.com/langchainai)
+[![发布说明](https://img.shields.io/github/release/langchain-ai/langchain?style=flat-square)](https://github.com/langchain-ai/langchain/releases) 
+[![CI](https://github.com/langchain-ai/langchain/actions/workflows/check_diffs.yml/badge.svg)](https://github.com/langchain-ai/langchain/actions/workflows/check_diffs.yml) 
+[![PyPI - 许可证](https://img.shields.io/pypi/l/langchain-core?style=flat-square)](https://opensource.org/licenses/MIT) 
+[![PyPI - 下载量](https://img.shields.io/pypi/dm/langchain-core?style=flat-square)](https://pypistats.org/packages/langchain-core) 
+[![GitHub 星标图](https://img.shields.io/github/stars/langchain-ai/langchain?style=flat-square)](https://star-history.com/#langchain-ai/langchain) 
+[![开放问题](https://img.shields.io/github/issues-raw/langchain-ai/langchain?style=flat-square)](https://github.com/langchain-ai/langchain/issues) 
+[![在 Dev Containers 中打开](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode&style=flat-square)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/langchain-ai/langchain) 
+[![在 GitHub Codespaces 中打开](https://github.com/codespaces/badge.svg)](https://codespaces.new/langchain-ai/langchain) 
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/langchainai.svg?style=social&label=关注%20@LangChainAI)](https://twitter.com/langchainai) 
 
-Looking for the JS/TS library? Check out [LangChain.js](https://github.com/langchain-ai/langchainjs).
+寻找 JS/TS 库？请查看 [LangChain.js](https://github.com/langchain-ai/langchainjs). 
 
-To help you ship LangChain apps to production faster, check out [LangSmith](https://smith.langchain.com).
-[LangSmith](https://smith.langchain.com) is a unified developer platform for building, testing, and monitoring LLM applications.
-Fill out [this form](https://www.langchain.com/contact-sales) to speak with our sales team.
+想要快速将 LangChain 应用部署到生产环境，请查看 [LangSmith](https://smith.langchain.com). 
+[LangSmith](https://smith.langchain.com) 是一个统一的开发平台，用于构建、测试和监控基于大型语言模型（LLM）的应用。
+填写 [此表单](https://www.langchain.com/contact-sales) 与我们的销售团队交流。
 
-## Quick Install
+## 快速安装
 
-With pip:
+使用 pip:
 
 ```bash
 pip install langchain
 ```
 
-With conda:
+使用 conda:
 
 ```bash
 conda install langchain -c conda-forge
 ```
 
-## 🤔 What is LangChain?
+## 🤔 什么是 LangChain?
 
-**LangChain** is a framework for developing applications powered by large language models (LLMs).
+**LangChain** 是一个用于开发由大型语言模型（LLM）驱动的应用程序的框架。
 
-For these applications, LangChain simplifies the entire application lifecycle:
+对于这些应用，LangChain 简化了整个应用生命周期：
 
-- **Open-source libraries**: Build your applications using LangChain's open-source [building blocks](https://python.langchain.com/v0.2/docs/concepts#langchain-expression-language-lcel), [components](https://python.langchain.com/v0.2/docs/concepts), and [third-party integrations](https://python.langchain.com/v0.2/docs/integrations/platforms/).
-  Use [LangGraph](/docs/concepts/#langgraph) to build stateful agents with first-class streaming and human-in-the-loop support.
-- **Productionization**: Inspect, monitor, and evaluate your apps with [LangSmith](https://docs.smith.langchain.com/) so that you can constantly optimize and deploy with confidence.
-- **Deployment**: Turn your LangGraph applications into production-ready APIs and Assistants with [LangGraph Cloud](https://langchain-ai.github.io/langgraph/cloud/).
+- **开源库**：使用 LangChain 的开源[构建模块](https://python.langchain.com/v0.2/docs/concepts#langchain-expression-language-lcel)、[组件](https://python.langchain.com/v0.2/docs/concepts) 和 [第三方集成](https://python.langchain.com/v0.2/docs/integrations/platforms/) 构建你的应用。 
+  使用 [LangGraph](/docs/concepts/#langgraph) 构建具有一流流式处理和人工干预支持的状态代理。
+- **产品化**：使用 [LangSmith](https://docs.smith.langchain.com/) 检查、监控和评估你的应用，以便你可以持续优化并自信地部署。
+- **部署**：将你的 LangGraph 应用转化为生产就绪的 API 和助手，使用 [LangGraph Cloud](https://langchain-ai.github.io/langgraph/cloud/). 
 
-### Open-source libraries
+### 开源库
 
-- **`langchain-core`**: Base abstractions and LangChain Expression Language.
-- **`langchain-community`**: Third party integrations.
-  - Some integrations have been further split into **partner packages** that only rely on **`langchain-core`**. Examples include **`langchain_openai`** and **`langchain_anthropic`**.
-- **`langchain`**: Chains, agents, and retrieval strategies that make up an application's cognitive architecture.
-- **[`LangGraph`](https://langchain-ai.github.io/langgraph/)**: A library for building robust and stateful multi-actor applications with LLMs by modeling steps as edges and nodes in a graph. Integrates smoothly with LangChain, but can be used without it.
+- **`langchain-core`**：基础抽象和 LangChain 表达语言。
+- **`langchain-community`**：第三方集成。
+  - 一些集成已进一步拆分为 **合作伙伴包**，仅依赖于 **`langchain-core`**。例如 **`langchain_openai`** 和 **`langchain_anthropic`**。
+- **`langchain`**：链、代理和检索策略，构成了应用的认知架构。
+- **[`LangGraph`](https://langchain-ai.github.io/langgraph/)**：一个库，用于通过将步骤建模为图中的边和节点，构建健壮和状态的多角色应用。与 LangChain 无缝集成，但也可以单独使用。
 
-### Productionization:
+### 产品化：
 
-- **[LangSmith](https://docs.smith.langchain.com/)**: A developer platform that lets you debug, test, evaluate, and monitor chains built on any LLM framework and seamlessly integrates with LangChain.
+- **[LangSmith](https://docs.smith.langchain.com/)**：一个开发平台，让你可以调试、测试、评估并监控任何 LLM 框架上构建的链，并与 LangChain 无缝集成。
 
-### Deployment:
+### 部署：
 
-- **[LangGraph Cloud](https://langchain-ai.github.io/langgraph/cloud/)**: Turn your LangGraph applications into production-ready APIs and Assistants.
+- **[LangGraph Cloud](https://langchain-ai.github.io/langgraph/cloud/)**：将你的 LangGraph 应用转化为生产就绪的 API 和助手。
 
-![Diagram outlining the hierarchical organization of the LangChain framework, displaying the interconnected parts across multiple layers.](docs/static/svg/langchain_stack_062024.svg "LangChain Architecture Overview")
+![图示展示了 LangChain 框架的层级组织结构，显示了多层之间的相互连接部分。](docs/static/svg/langchain_stack_062024.svg "LangChain 架构概览")
 
-## 🧱 What can you build with LangChain?
+## 🧱 你可以用 LangChain 构建什么？
 
-**❓ Question answering with RAG**
+**❓ 使用 RAG 的问答**
 
-- [Documentation](https://python.langchain.com/v0.2/docs/tutorials/rag/)
-- End-to-end Example: [Chat LangChain](https://chat.langchain.com) and [repo](https://github.com/langchain-ai/chat-langchain)
+- [文档](https://python.langchain.com/v0.2/docs/tutorials/rag/) 
+- 端到端示例：[Chat LangChain](https://chat.langchain.com) 和 [仓库](https://github.com/langchain-ai/chat-langchain) 
 
-**🧱 Extracting structured output**
+**🧱 提取结构化输出**
 
-- [Documentation](https://python.langchain.com/v0.2/docs/tutorials/extraction/)
-- End-to-end Example: [SQL Llama2 Template](https://github.com/langchain-ai/langchain-extract/)
+- [文档](https://python.langchain.com/v0.2/docs/tutorials/extraction/) 
+- 端到端示例：[SQL Llama2 模板](https://github.com/langchain-ai/langchain-extract/) 
 
-**🤖 Chatbots**
+**🤖 聊天机器人**
 
-- [Documentation](https://python.langchain.com/v0.2/docs/tutorials/chatbot/)
-- End-to-end Example: [Web LangChain (web researcher chatbot)](https://weblangchain.vercel.app) and [repo](https://github.com/langchain-ai/weblangchain)
+- [文档](https://python.langchain.com/v0.2/docs/tutorials/chatbot/) 
+- 端到端示例：[Web LangChain（网络研究聊天机器人）](https://weblangchain.vercel.app) 和 [仓库](https://github.com/langchain-ai/weblangchain) 
 
-And much more! Head to the [Tutorials](https://python.langchain.com/v0.2/docs/tutorials/) section of the docs for more.
+还有更多！前往文档的 [教程](https://python.langchain.com/v0.2/docs/tutorials/) 部分了解更多。
 
-## 🚀 How does LangChain help?
+## 🚀 LangChain 如何提供帮助？
 
-The main value props of the LangChain libraries are:
+LangChain 库的主要价值主张包括：
 
-1. **Components**: composable building blocks, tools and integrations for working with language models. Components are modular and easy-to-use, whether you are using the rest of the LangChain framework or not
-2. **Off-the-shelf chains**: built-in assemblages of components for accomplishing higher-level tasks
+1. **组件**：可组合的构建模块、工具和集成，用于与语言模型协作。无论你是否使用 LangChain 框架的其他部分，组件都是模块化且易于使用的。
+2. **现成的链**：内置的组件组合，用于完成更高级的任务。
 
-Off-the-shelf chains make it easy to get started. Components make it easy to customize existing chains and build new ones.
+现成的链让你轻松开始。组件让你轻松自定义现有链并构建新的链。
 
-## LangChain Expression Language (LCEL)
+## LangChain 表达语言 (LCEL)
 
-LCEL is a key part of LangChain, allowing you to build and organize chains of processes in a straightforward, declarative manner. It was designed to support taking prototypes directly into production without needing to alter any code. This means you can use LCEL to set up everything from basic "prompt + LLM" setups to intricate, multi-step workflows.
+LCEL 是 LangChain 的关键部分，允许你以直接、声明式的方式构建和组织处理链。它的设计目的是支持将原型直接投入生产，而无需更改任何代码。这意味着你可以使用 LCEL 设置从基本的“提示 + LLM”设置到复杂的多步骤工作流。
 
-- **[Overview](https://python.langchain.com/v0.2/docs/concepts/#langchain-expression-language-lcel)**: LCEL and its benefits
-- **[Interface](https://python.langchain.com/v0.2/docs/concepts/#runnable-interface)**: The standard Runnable interface for LCEL objects
-- **[Primitives](https://python.langchain.com/v0.2/docs/how_to/#langchain-expression-language-lcel)**: More on the primitives LCEL includes
-- **[Cheatsheet](https://python.langchain.com/v0.2/docs/how_to/lcel_cheatsheet/)**: Quick overview of the most common usage patterns
+- **[概览](https://python.langchain.com/v0.2/docs/concepts/#langchain-expression-language-lcel)**：LCEL 及其优势
+- **[接口](https://python.langchain.com/v0.2/docs/concepts/#runnable-interface)**：LCEL 对象的标准 Runnable 接口
+- **[原语](https://python.langchain.com/v0.2/docs/how_to/#langchain-expression-language-lcel)**：LCEL 包含的原语更多信息
+- **[备忘单](https://python.langchain.com/v0.2/docs/how_to/lcel_cheatsheet/)**：最常见使用模式的快速概览
 
-## Components
+## 组件
 
-Components fall into the following **modules**:
+组件分为以下 **模块**：
 
-**📃 Model I/O**
+**📃 模型 I/O**
 
-This includes [prompt management](https://python.langchain.com/v0.2/docs/concepts/#prompt-templates), [prompt optimization](https://python.langchain.com/v0.2/docs/concepts/#example-selectors), a generic interface for [chat models](https://python.langchain.com/v0.2/docs/concepts/#chat-models) and [LLMs](https://python.langchain.com/v0.2/docs/concepts/#llms), and common utilities for working with [model outputs](https://python.langchain.com/v0.2/docs/concepts/#output-parsers).
+这包括 [提示管理](https://python.langchain.com/v0.2/docs/concepts/#prompt-templates)、[提示优化](https://python.langchain.com/v0.2/docs/concepts/#example-selectors)、通用接口 [聊天模型](https://python.langchain.com/v0.2/docs/concepts/#chat-models) 和 [LLM](https://python.langchain.com/v0.2/docs/concepts/#llms)，以及用于处理 [模型输出](https://python.langchain.com/v0.2/docs/concepts/#output-parsers) 的常用工具。
 
-**📚 Retrieval**
+**📚 检索**
 
-Retrieval Augmented Generation involves [loading data](https://python.langchain.com/v0.2/docs/concepts/#document-loaders) from a variety of sources, [preparing it](https://python.langchain.com/v0.2/docs/concepts/#text-splitters), then [searching over (a.k.a. retrieving from)](https://python.langchain.com/v0.2/docs/concepts/#retrievers) it for use in the generation step.
+检索增强生成涉及从各种来源 [加载数据](https://python.langchain.com/v0.2/docs/concepts/#document-loaders)、[准备数据](https://python.langchain.com/v0.2/docs/concepts/#text-splitters)，然后 [搜索（即从其中检索）](https://python.langchain.com/v0.2/docs/concepts/#retrievers) 以供生成步骤使用。
 
-**🤖 Agents**
+**🤖 代理**
 
-Agents allow an LLM autonomy over how a task is accomplished. Agents make decisions about which Actions to take, then take that Action, observe the result, and repeat until the task is complete. LangChain provides a [standard interface for agents](https://python.langchain.com/v0.2/docs/concepts/#agents), along with [LangGraph](https://github.com/langchain-ai/langgraph) for building custom agents.
+代理允许 LLM 在完成任务时拥有自主权。代理决定采取哪些行动，然后采取该行动，观察结果，并重复直到任务完成。LangChain 提供了 [标准代理接口](https://python.langchain.com/v0.2/docs/concepts/#agents)，以及用于构建自定义代理的 [LangGraph](https://github.com/langchain-ai/langgraph)。
 
-## 📖 Documentation
+## 📖 文档
 
-Please see [here](https://python.langchain.com) for full documentation, which includes:
+请查看 [这里](https://python.langchain.com) 获取完整文档，包括：
 
-- [Introduction](https://python.langchain.com/v0.2/docs/introduction/): Overview of the framework and the structure of the docs.
-- [Tutorials](https://python.langchain.com/docs/use_cases/): If you're looking to build something specific or are more of a hands-on learner, check out our tutorials. This is the best place to get started.
-- [How-to guides](https://python.langchain.com/v0.2/docs/how_to/): Answers to “How do I….?” type questions. These guides are goal-oriented and concrete; they're meant to help you complete a specific task.
-- [Conceptual guide](https://python.langchain.com/v0.2/docs/concepts/): Conceptual explanations of the key parts of the framework.
-- [API Reference](https://api.python.langchain.com): Thorough documentation of every class and method.
+- [介绍](https://python.langchain.com/v0.2/docs/introduction/)：框架和文档结构的概览。
+- [教程](https://python.langchain.com/docs/use_cases/)：如果你想构建特定的东西或者更倾向于动手学习，可以查看我们的教程。这是开始的最佳地点。
+- [如何指南](https://python.langchain.com/v0.2/docs/how_to/)：回答“我该如何……？”类型的问题。这些指南是目标导向和具体的；它们旨在帮助你完成特定任务。
+- [概念指南](https://python.langchain.com/v0.2/docs/concepts/)：框架关键部分的概念解释。
+- [API 参考](https://api.python.langchain.com)：每个类和方法的详尽文档。
 
-## 🌐 Ecosystem
+## 🌐 生态系统
 
-- [🦜🛠️ LangSmith](https://docs.smith.langchain.com/): Trace and evaluate your language model applications and intelligent agents to help you move from prototype to production.
-- [🦜🕸️ LangGraph](https://langchain-ai.github.io/langgraph/): Create stateful, multi-actor applications with LLMs. Integrates smoothly with LangChain, but can be used without it.
-- [🦜🏓 LangServe](https://python.langchain.com/docs/langserve): Deploy LangChain runnables and chains as REST APIs.
+- [🦜🛠️ LangSmith](https://docs.smith.langchain.com/)：追踪和评估你的语言模型应用和智能代理，帮助你从原型到生产。
+- [🦜🕸️ LangGraph](https://langchain-ai.github.io/langgraph/)：使用 LLM 创建状态的、多角色应用。与 LangChain 无缝集成，但也可以单独使用。
+- [🦜🏓 LangServe](https://python.langchain.com/docs/langserve)：将 LangChain 可运行和链部署为 REST API。
 
-## 💁 Contributing
+## 💁 贡献
 
-As an open-source project in a rapidly developing field, we are extremely open to contributions, whether it be in the form of a new feature, improved infrastructure, or better documentation.
+作为一个快速发展领域的开源项目，我们非常欢迎贡献，无论是新功能、改进的基础设施还是更好的文档。
 
-For detailed information on how to contribute, see [here](https://python.langchain.com/v0.2/docs/contributing/).
+有关如何贡献的详细信息，请查看 [这里](https://python.langchain.com/v0.2/docs/contributing/)。
 
-## 🌟 Contributors
+## 🌟 贡献者
 
-[![langchain contributors](https://contrib.rocks/image?repo=langchain-ai/langchain&max=2000)](https://github.com/langchain-ai/langchain/graphs/contributors)
+[![langchain 贡献者](https://contrib.rocks/image?repo=langchain-ai/langchain&max=2000)](https://github.com/langchain-ai/langchain/graphs/contributors)
